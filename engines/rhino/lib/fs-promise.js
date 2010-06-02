@@ -1,4 +1,4 @@
 var File = require("file");
-exports.readFileSync = File.read;
-exports.writeFileSync = File.write;
+exports.readFileSync = exports.read = File.read;
+exports.writeFileSync = exports.write = File.write;
 exports.statSync = File.stat;
