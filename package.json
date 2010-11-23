@@ -1,15 +1,29 @@
 {
-	"name": "commonjs-utils",
-	"author": "Kris Zyp",
-	"dependencies": [],
-	"contributors": [],
-	"keywords": [
-		"json",
-		"schema",
-		"query"
-	],
-	"engines": {"node":">=0.1.30", "rhino": true},
-	"githubName": "commonjs-utils",
-	"type": "zip",
-	"location": "http://github.com/kriszyp/commonjs-utils/zipball/master"
+  "name": "commonjs-utils",
+  "version": "0.2.2",
+  "author": {
+    "name": "Kris Zyp"
+  },
+  "contributors": [],
+  "keywords": [
+    "json",
+    "schema",
+    "query"
+  ],
+  "githubName": "commonjs-utils",
+  "licenses": [
+     {
+         "type": "AFLv2.1",
+         "url": "http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L43"
+     },
+     {
+         "type": "BSD",
+         "url": "http://trac.dojotoolkit.org/browser/dojo/trunk/LICENSE#L13"
+     }
+  ],
+  "repository": {
+    "type":"git",
+    "url":"http://github.com/kriszyp/commonjs-utils"
+  },
+  "directories": { "lib": "./lib" }
 }
