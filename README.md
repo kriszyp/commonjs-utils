@@ -25,7 +25,7 @@ Provides conversion between JavaScript strings and base64. The base64 module exp
 
 More extensive information on CommonJS utilities can be found here:
 
-(http://www.sitepen.com/blog/2010/03/02/commonjs-utilities/)[http://www.sitepen.com/blog/2010/03/02/commonjs-utilities/]
+[http://www.sitepen.com/blog/2010/03/02/commonjs-utilities/](http://www.sitepen.com/blog/2010/03/02/commonjs-utilities/)
 
 CommonJS Utils is part of the Persevere project, and therefore is licensed under the
 AFL or BSD license. The Persevere project is administered under the Dojo foundation,
