@@ -25,5 +25,8 @@
     "type":"git",
     "url":"http://github.com/kriszyp/commonjs-utils"
   },
-  "directories": { "lib": "./lib" }
+  "directories": { "lib": "." },
+  "dependencies": {
+      "promised-io": ">=0.2.3"
+  }
 }

@@ -1,5 +1,5 @@
 try{
-	var when = require("./promise").when;
+	var when = require("promised-io/promise").when;
 }catch(e){
 	when = function(value, callback){
 		return callback(value);
