@@ -1,6 +1,11 @@
 try{
 	var read = require("fs").readFileSync;
 }catch(e){
+}
+if(!read){
+	read = require("fs").read;
+}
+if(!read){
 	read = require("file").read;
 }
 try{
