@@ -1,7 +1,8 @@
 /**
  * This is a port of Dojo's JSON module
  */
-
+(function(define){
+define(function(require, exports){
 if(typeof JSON === "undefined"){
 exports.parse = function(/*String*/ json){
 	// summary:
@@ -129,3 +130,5 @@ else{
 	exports.parse = JSON.parse;
 	exports.stringify = JSON.stringify;
 }
+});
+})(typeof define == "undefined" ? function(factory){factory(require, exports);} : define);
