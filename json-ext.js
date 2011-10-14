@@ -106,13 +106,12 @@ replace(/(?:^|:|,|&&)(?:\s*\[)+/g, ''))) {
 
 var cx = /[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g;
 
-
 var nativeConstructors = {"String":String, "Object":Object, "Number":Number, "Boolean":Boolean, "Array":Array, "Date":Date};
 exports.stringify = ({}).toSource ?
 	// we will use toSource if it is available
 	(function(){
 		Object.keys(nativeConstructors).forEach(function(name){
-			global[name].toSource = function(){ 
+			(global[name] || global()[name]).toSource = function(){ // you have to call global() in Rhino. Why?!? 
 				return name;
 			};
 		});
