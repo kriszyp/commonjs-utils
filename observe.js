@@ -19,6 +19,7 @@ exports.observe = function(object, eventName, listener, before) {
         try{
 			listener.apply(that, args);
     	}catch(e){
+    		// XXX: where is this dependency?
     		require("./sys").print(e);
     	}
 	};

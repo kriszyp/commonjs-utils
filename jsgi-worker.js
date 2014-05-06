@@ -14,7 +14,7 @@
  * 
  */
 var observe = require("./observe").observe,
-	defer = require("./promise").defer;
+	defer = require("promised-io/promise").defer;
 // Takes a JSGI 0.3 app.
 // Messages are communicated between workers using the JSGI 0.3 object structure
 // serialized in JSON format. 

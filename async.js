@@ -31,7 +31,7 @@ sleepAndAdd4(10).addCallback(function(value){
   
  */
  
-var Promise = require("./promise").Promise; 
+var Promise = require("promised-io/promise").Promise; 
  // the async library
 exports.async = function(generatorFunction){
     return function(){
